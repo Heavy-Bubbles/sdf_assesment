@@ -99,31 +99,7 @@ public class App
                     System.out.println($last);
                     }
                     break;
-    
-                    case "x":
-                    if (inputs.get(0).equals("$last") && inputs.get(2).equals("$last")){
-                        Double num1 = $last;
-                        Double num2 = $last;
-                        $last = multiply.apply(num1, num2);
-                        System.out.println($last);  
-                    } else if (inputs.get(2).equals("$last")){
-                        Double num1 = Double.parseDouble(inputs.get(0));
-                        Double num2 = $last;
-                        $last = multiply.apply(num1, num2);
-                        System.out.println($last);
-                    } else if (inputs.get(0).equals("$last")){
-                        Double num1 = $last;
-                        Double num2 = Double.parseDouble(inputs.get(2));
-                        $last = multiply.apply(num1, num2);
-                        System.out.println($last);
-                    } else {
-                    double num1 = Double.parseDouble(inputs.get(0));
-                    double num2 = Double.parseDouble(inputs.get(2));
-                    $last = multiply.apply(num1, num2);
-                    System.out.println($last);
-                    }
-                    break;
-    
+ 
                     case "*":
                     if (inputs.get(0).equals("$last") && inputs.get(2).equals("$last")){
                         Double num1 = $last;
