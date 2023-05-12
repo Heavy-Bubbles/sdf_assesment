@@ -20,7 +20,6 @@ public class App
         String author = args[0];
         File testDirectory = new File("texts" + File.separator + author);
         readAllFiles(testDirectory);
-
         printProbability();
        
        
@@ -111,7 +110,7 @@ public class App
             wordCount.forEach((key2, value2) ->{
                 if (key2.startsWith(key1)){
                     double probability = value2 / value1;
-                    System.out.println("     " + key2 + " " + probability);
+                    System.out.println("     " + key2.substring(key1.length()) + " " + probability);
                 }
 
             }
